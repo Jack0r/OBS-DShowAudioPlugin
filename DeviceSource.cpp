@@ -379,6 +379,7 @@ bool DeviceSource::LoadFilters()
         audioOut->Initialize(this);
         API->AddAudioSource(audioOut);
 
+        audioOut->SetAudioOffset(soundTimeOffset);
         audioOut->SetVolume(volume);
     }
 
@@ -641,7 +642,7 @@ void DeviceSource::ReceiveMediaSample(IMediaSample *sample, bool bAudio)
                 memcpy(data->lpData, pointer, data->dataLength);
 
                 LONGLONG stopTime;
-                sample->GetTime(&data->timestamp, &stopTime);
+                sample->GetTime(&stopTime, &data->timestamp);
             }
 
             //Log(TEXT("timestamp: %lld, bAudio - %s"), data->timestamp, bAudio ? TEXT("true") : TEXT("false"));
@@ -780,7 +781,7 @@ void DeviceSource::SetInt(CTSTR lpName, int iVal)
         if(scmpi(lpName, TEXT("timeOffset")) == 0)
         {
             if(audioOut)
-                audioOut->SetTimeOffset(iVal);
+                audioOut->SetAudioOffset(iVal);
         }
     }
 }
