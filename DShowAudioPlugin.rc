@@ -1,0 +1,115 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese (Japan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIG DIALOGEX 0, 0, 451, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DeviceSelection"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "DeviceSelection.Refresh",IDC_REFRESH,345,7,78,13
+    GROUPBOX        "DeviceSelection.Sound",IDC_STATIC,264,23,180,101,WS_GROUP
+    CONTROL         "DeviceSelection.NoSound",IDC_NOSOUND,"Button",BS_AUTORADIOBUTTON,271,62,163,10
+    CONTROL         "DeviceSelection.OutputSound",IDC_OUTPUTSOUND,"Button",BS_AUTORADIOBUTTON,271,74,163,10
+    LTEXT           "DeviceSelection.SoundOffset",IDC_STATIC,268,90,117,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_TIMEOFFSET_EDIT,389,86,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TIMEOFFSET,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,429,91,10,14
+    CONTROL         "DeviceSelection.PlayToDesktop",IDC_PLAYDESKTOPSOUND,
+                    "Button",BS_AUTORADIOBUTTON,271,104,163,10
+    DEFPUSHBUTTON   "OK",IDOK,336,128,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,394,128,50,14
+    CONTROL         "ÉJÉXÉ^ÉÄ1",IDC_VOLUME,"OBSVolumeControl",WS_TABSTOP,272,34,118,19
+    RTEXT           "DeviceSelection.AudioDevice",IDC_STATIC,4,9,117,8
+    COMBOBOX        IDC_AUDIOLIST,125,7,133,12,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "DeviceSelection.Config",IDC_CONFIGAUDIO,264,7,78,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CONFIG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_COLORPICKER         CURSOR                  "cursor1.cur"
+#endif    // Japanese (Japan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,35 @@
+﻿Build started 3/13/2013 8:28:00 PM.
+     1>Project "D:\Installs\OBS\gitshit\DShowPlugin\DShowPlugin.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\DShowPlugin.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\VS10\VC\bin\CL.exe /c /I../OBSApi /Zi /nologo /W3 /WX- /Ox /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D DSHOWPLUGIN_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHa /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /FAs /Fa"Release\\" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DShowPlugin.cpp
+         DShowPlugin.cpp
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\VS10\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Release\DShowPlugin.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:../OBSApi/Release OBSApi.lib strmiids.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\DShowPlugin.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"..\rundir\pdb32\DShowPlugin.pdb" /PDBSTRIPPED:"..\rundir\pdb32\stripped\DShowPlugin.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Release\DShowPlugin.lib" /MACHINE:X86 /DLL Release\DShowPlugin.res
+         Release\CaptureFilter.obj
+         Release\DeviceAudio.obj
+         Release\DeviceSource.obj
+         Release\DShowPlugin.obj
+         Release\ImageMadness.obj
+         Release\MediaInfoStuff.obj
+            Creating library Release\DShowPlugin.lib and object Release\DShowPlugin.exp
+         Generating code
+         Finished generating code
+         DShowPlugin.vcxproj -> D:\Installs\OBS\gitshit\DShowPlugin\Release\DShowPlugin.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"Release\DShowPlugin.dll;#2" /manifest Release\DShowPlugin.dll.intermediate.manifest
+       PostBuildEvent:
+         copy Release\DShowPlugin.dll ..\rundir\plugins
+         :VCEnd
+                 1 file(s) copied.
+       FinalizeBuildStatus:
+         Deleting file "Release\DShowPlugin.unsuccessfulbuild".
+         Touching "Release\DShowPlugin.lastbuildstate".
+     1>Done Building Project "D:\Installs\OBS\gitshit\DShowPlugin\DShowPlugin.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.18
